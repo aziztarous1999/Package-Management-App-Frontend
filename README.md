@@ -99,22 +99,22 @@ npx expo start
 
 ### 📸 Demo Screenshots
 
-Register Screen
+- **Register Screen
 ![Register](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/1.jpg)
 
 
-Login Screen
+- **Login Screen
 ![Login](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/2.jpg)
 
 
-Create Package
+- **Create Package
 ![CreatePackage](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/4.jpg)
 
 
-My Packages
+- **My Packages
 ![Packages](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/3.jpg)
 
 
-Track Package
+- **Track Package
 ![TrackPackage1](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/5.jpg)
 ![TrackPackage2](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/6.jpg)
