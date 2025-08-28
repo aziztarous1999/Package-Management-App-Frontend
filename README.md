@@ -1,50 +1,116 @@
-# Welcome to your Expo app 👋
+# 📦 Package Management App (Frontend)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A **React Native (Expo)** mobile application for creating and tracking packages.
+This app connects to the Flask + MongoDB backend API.
 
-## Get started
+---
 
-1. Install dependencies
+## ✨ Features
 
-   ```bash
-   npm install
-   ```
+- 🔑 User Authentication (Register & Login with JWT)
+- 📦 Create new packages with recipient info
+- 🔍 Track a package by its tracking ID
+- 📋 View all created packages in a styled card list
+- 🖼 Background images for Auth screens
+- 🎨 Custom theming and modals for success/error states
+- 📲 Clipboard support (copy tracking ID)
+- ⚡ Smooth navigation & animations with React Native Reanimated
+- 🔔 Haptic feedback on success/error
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🛠️ Tech Stack
 
-In the output, you'll find options to open the app in a
+- **React Native (Expo)**
+- **Expo Router** (navigation)
+- **Axios** (API requests)
+- **Expo SecureStore** (JWT storage)
+- **React Native Reanimated** (animations)
+- **Expo Clipboard & Haptics**
+- **Backend:** Flask + MongoDB (see [Backend Repo](../colis-backend))
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🚀 Getting Started
 
-## Get a fresh project
-
-When you're ready, run:
+### 1. Clone the repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/your-username/package-management-app.git
+cd package-management-app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Install dependencies
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 3. Configure API URL
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+This project uses the backend Flask API running locally.
+The Expo config (app.json) already includes the API URL:
 
-## Join the community
+```bash
+"extra": {
+  "EXPO_PUBLIC_API_URL": "http://192.168.1.7:5000"
+}
+```
 
-Join our community of developers creating universal apps.
+Replace **192.168.1.7** with your machine’s LAN IP if different.
+Run ipconfig (Windows) or ifconfig (Mac/Linux) to find it.
+Make sure your phone and PC are on the same Wi-Fi network.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### 4. Run the backend
+
+Go to your backend project (colis-backend) and start Flask:
+
+```bash
+cd ../colis-backend
+venv\Scripts\activate   # on Windows
+# or source venv/bin/activate (Linux/Mac)
+
+python app.py
+```
+
+You should see something like this on the backend console:
+
+```bash
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+```
+
+Use the **LAN URL** (e.g. http://192.168.1.7:5000) in app.json.
+
+### 5. Run the react native app using expo
+
+Back in the frontend folder:
+
+```bash
+cd ../package-management-app
+npx expo start
+```
+
+* On physical device: open Expo Go app, scan the QR code (LAN mode).
+* On emulator: press a for Android or i for iOS.
+
+### 🎥 Demo Video :
+  [Watch on Google Drive](https://drive.google.com/file/d/1wR7BkxInR3urzqG3MBhulWv0r8p15IMa/view?usp=sharing)
+
+### 📸 Demo Screenshots
+
+Register Screen
+  ![Register](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/1.jpg)
+
+Login Screen
+  ![Login](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/2.jpg)
+
+Create Package
+  ![CreatePackage](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/4.jpg)
+
+My Packages
+  ![Packages](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/3.jpg)
+
+Track Package
+  ![TrackPackage1](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/5.jpg)
+  ![TrackPackage2](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/6.jpg)
