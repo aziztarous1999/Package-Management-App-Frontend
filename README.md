@@ -27,7 +27,7 @@ This app connects to the Flask + MongoDB backend API.
 - **Expo SecureStore** (JWT storage)
 - **React Native Reanimated** (animations)
 - **Expo Clipboard & Haptics**
-- **Backend:** Flask + MongoDB (see [Backend Repo](../colis-backend))
+- **Backend:** Flask + MongoDB (see [Backend Repo](https://github.com/aziztarous1999/Package-Management-App-Backend))
 
 ---
 
@@ -95,22 +95,26 @@ npx expo start
 * On emulator: press a for Android or i for iOS.
 
 ### 🎥 Demo Video :
-  [Watch on Google Drive](https://drive.google.com/file/d/1wR7BkxInR3urzqG3MBhulWv0r8p15IMa/view?usp=sharing)
+[Watch on Google Drive](https://drive.google.com/file/d/1wR7BkxInR3urzqG3MBhulWv0r8p15IMa/view?usp=sharing)
 
 ### 📸 Demo Screenshots
 
 Register Screen
-  ![Register](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/1.jpg)
+![Register](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/1.jpg)
+
 
 Login Screen
-  ![Login](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/2.jpg)
+![Login](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/2.jpg)
+
 
 Create Package
-  ![CreatePackage](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/4.jpg)
+![CreatePackage](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/4.jpg)
+
 
 My Packages
-  ![Packages](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/3.jpg)
+![Packages](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/3.jpg)
+
 
 Track Package
-  ![TrackPackage1](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/5.jpg)
-  ![TrackPackage2](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/6.jpg)
+![TrackPackage1](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/5.jpg)
+![TrackPackage2](https://github.com/aziztarous1999/Package-Management-App-Frontend/blob/main/demo/6.jpg)
